@@ -3,4 +3,4 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY ./src/package.json /usr/src/app/
 RUN npm install
-CMD ["npm", "test"]
+COPY ./src/ /usr/src/app/
