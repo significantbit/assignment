@@ -62,3 +62,10 @@ You sit in a ring and counts 1, 2 .. but when you hit a number that is divisible
 1,2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, ... 13, 14, FizzBuzz
 
 Your task is to implement a function that creates an array over all integers from 1 to 100 and create the correct response for each number.
+
+## Recursive reverse
+Write a function that reverse a string using a recursive function.
+
+A recursive function calls itself instead of using imperative loop constructs
+such as: forEach, for, while, do, break, continue, label, map, for .. in,
+for .. of 
