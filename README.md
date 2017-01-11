@@ -14,6 +14,9 @@ on your local machine except git, docker and a text editor.
 
 You can download and install Docker from here: https://www.docker.com/products/docker
 
+The tests uses Jasmine 2.5, if you don't understand any implementation
+details you can read the docs here: https://jasmine.github.io/2.5/introduction
+However the tests are quite self explanatory.
 
 ## Running tests
 `docker-compose up` will build the container if it is missing and
