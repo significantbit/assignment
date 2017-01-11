@@ -34,8 +34,31 @@ For example adding a npm package:
 You should run docker commands in the root level of the project structure
 and not in the src subdirectory.
 
+## Focus on separate tests
+If you would want to focus on a specific problem and not get all failing tests at once you can add the letter `f` before `describe` or `it` then only the tests marked will run.
+
+Example:
+`describe('Leap year', function() { .. `
+becomes `fdescribe('Leap year', function() { .. `
+
 
 # Problems
 
 ## Leap
 Write a function that tests if a year is leap year or not.
+
+Every fourth year is a leap year except if it is exactly divisible by 100 but if it is a the same time is exactly divisible by 400 it is still a leap year.
+
+* 2016 is a leap year since it is divisible by 4
+* 1700 is not a leap year since it is divisible by 100 but not 400
+* 1600 is since it is divisible by 400
+
+
+## Fizz-Buzz
+Fizz Buzz is a play that teaches children about division.
+
+You sit in a ring and counts 1, 2 .. but when you hit a number that is divisible by 3 you say Fizz if you hit a number divisible by 5 you say Buzz. If the number is both divisible by 3 and 5 you should answer FizzBuzz
+
+1,2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, ... 13, 14, FizzBuzz
+
+Your task is to implement a function that creates an array over all integers from 1 to 100 and create the correct response for each number.
