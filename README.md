@@ -68,4 +68,28 @@ Write a function that reverse a string using a recursive function.
 
 A recursive function calls itself instead of using imperative loop constructs
 such as: forEach, for, while, do, break, continue, label, map, for .. in,
-for .. of 
+for .. of
+
+## Weighted sample
+Implement a class that has two member methods
+
+`add(weight, value)`
+Add will be called with a weight and a value, the weight represent
+how likely the value will show up during sample
+
+`sample()` sample will return a random value with the random distribution
+in accordance to its weight.
+
+For example:
+
+```
+var weightedSample = new WeightedSample();
+weightedSample.add(4, 1);
+weightedSample.add(1, 2);
+weightedSample.add(1, 3);
+
+weightedSample.sample()  
+```
+* 66% of the times return `1`
+* 17% of the times return `2`
+* 17% of the times return `3`
